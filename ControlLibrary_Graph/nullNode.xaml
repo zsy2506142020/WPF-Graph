@@ -1,0 +1,12 @@
+﻿<UserControl x:Class="ControlLibrary_Graph.nullNode"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ControlLibrary_Graph"
+             mc:Ignorable="d" 
+             Width="34" Height="42">
+    <Grid x:Name="nullNodeGrid" Margin="5">
+        <Label BorderThickness="1" BorderBrush="Black" x:Name="adjVexLabel" Grid.Column="0" FontSize="10"  Padding="2,8" Content="null"/>
+    </Grid>
+</UserControl>

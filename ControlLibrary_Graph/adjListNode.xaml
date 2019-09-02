@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="ControlLibrary_Graph.adjListNode"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ControlLibrary_Graph"
+             mc:Ignorable="d" 
+             Width="82" Height="42">
+    <!--每块空白部分width=22，height=30-->
+    <Grid x:Name="adjListNodeGrid" Margin="5">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label BorderThickness="1" BorderBrush="Black" x:Name="adjVexLabel" Grid.Column="0" FontSize="10"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label BorderThickness="1" BorderBrush="Black" x:Name="weiLabel" Grid.Column="1" FontSize="10"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label BorderThickness="1" BorderBrush="Black" x:Name="nextLabel" Grid.Column="2" FontSize="10"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center"></Label>
+    </Grid>
+</UserControl>

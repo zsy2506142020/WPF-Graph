@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="ControlLibrary_Graph.GraphAdjListShow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ControlLibrary_Graph"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="600">
+    <Canvas x:Name="GraphAdjListShowCanvas">
+        <Grid x:Name="GraphAdjListShowGrid">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <StackPanel x:Name="VexNodeStackPanel" Orientation="Vertical" VerticalAlignment="Top"  Grid.Column="0" />
+            <StackPanel x:Name="allAdjListStackPanel" Orientation="Vertical" VerticalAlignment="Top"  Grid.Column="1"/>
+        </Grid>
+    </Canvas>
+</UserControl>
