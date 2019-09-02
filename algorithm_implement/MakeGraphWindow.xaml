@@ -1,0 +1,41 @@
+﻿<Window x:Class="algorithm_implement.MakeGraphWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:algorithm_implement"
+        xmlns:controls="clr-namespace:ControlLibrary_Graph;assembly=ControlLibrary_Graph"
+        mc:Ignorable="d"
+        Title="MakeGraphWindow" Height="620" Width="800">
+    <Grid x:Name="MakeGraphGrid" Background="LightBlue">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="480"/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250*"/>
+            <ColumnDefinition Width="500*"/>
+            <ColumnDefinition Width="50*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="请在给定区域作图" Grid.Column="1" Grid.Row="0" FontSize="30" VerticalAlignment="Center" HorizontalAlignment="Center" Height="50" Width="250"/>
+        <Grid Grid.Column="0" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" Content="鼠标左键单击-添加顶点" FontSize="15" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            <Label Grid.Row="1" Content="鼠标左键拖拽-添加弧" FontSize="15" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            <Label Grid.Row="2" Content="鼠标右键拖拽-移动顶点" FontSize="15" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            <Label Grid.Row="3" Content="鼠标右键双击-删除顶点/弧" FontSize="15" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            <Button Grid.Row="5" Content="确认提交" Background="SteelBlue" Width="100" Height="30" Click="ButtonClick_SubmitGraph"/>
+        </Grid>
+        <Border BorderBrush="SteelBlue" BorderThickness="10" Grid.Column="1" Grid.Row="1">
+            <controls:GraphShow x:Name="graphShowControl"></controls:GraphShow>
+        </Border>
+    </Grid>
+</Window>
